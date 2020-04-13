@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+ 
+   <div class="container">
+       <div class="game">
+       
+           <div class="row">
+
+               <div class="col s12">
+                  
+                <div class="card-panel teal lighten-2">
+                    <div class="input-field">
+                        <select id="difficulty">
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="hard">hard</option>
+                          <option value="medum">medum</option>
+                          <option value="easy">easy</option>
+                        </select>
+                        <label class="text-black">Difficult</label>
+                      </div>
+                </div>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col s8 offset-s2">
+                   <div class="card teal darken-4 ">
+                       <div class="card-content">
+                           <div class="row ">
+                               <div class="col s12 card-panel teal lighten-2 center-align  speed">
+                                   Speed Typer
+                               </div>
+                               <div  class="col s6">
+                                 time :<span id="time">10</span>  
+                               </div>
+                               <div  class="col s6 right-align">
+                                 score : <span id="score">0</span>
+                               </div>
+                               <div id="word" class="col s12 center-align">
+                                   word
+                               </div>
+                               <div class="input-field col s12 ">
+                                <input placeholder="type the word" autocomplete="off" id="type_word" type="text" class="validate typping">
+                                <label for="first_name">type word</label>
+                              </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    
+   </div>
+
+
+    <!-- Modal Trigger -->
+  <a id="modal" class="waves-effect waves-light btn modal-trigger hide" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Result</h4>
+      <p>Game Over</p>
+    </div>
+    <div class="modal-footer">
+      <button id="reload" class="modal-close waves-effect waves-green btn-flat">Reload</button>
+    </div>
+  </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js">  </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: #004d40;
+    color: #ffffff;
+}
+.speed{
+    font-weight: bold;
+    padding: 1rem 0 !important;
+}
+.typping{
+    color: #ffffff;
+}
+.modal-content{
+    color: black;
+}
+.text-black{
+    color: #000000 !important;
+}
